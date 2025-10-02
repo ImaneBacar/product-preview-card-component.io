@@ -18,7 +18,7 @@ body {
     height: 500px;
     background: white;
     border-radius: 10px;
-    width: 45%;
+    width: 50%;
 }
 
 .presentationimg {
@@ -46,7 +46,8 @@ body {
 
 #title {
     font-family: 'Fraunces';
-    font-size: 2.5em;
+    font-size: 2.4em;
+    font-weight: 550;
 }
 
 .descritpion {
@@ -88,4 +89,91 @@ body {
 
 .iconCart {
     padding: 10px;
+}
+
+.imgMobile {
+    display: none;
+}
+
+@media (hover: hover) {
+    .bouttonAddCart:hover {
+        background: hsl(158, 42%, 18%);
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .container {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .container {
+        width: 75%;
+    }
+}
+
+
+@media screen and (max-width: 740px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .content-container {
+        padding: 30px;
+    }
+
+    body {
+        padding: 50px 0;
+    }
+
+    #title {
+        font-size: 1.5em;
+    }
+
+    .nameProduct {
+        letter-spacing: 5px;
+        font-size: 8px;
+    }
+
+    .container {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        height: 750px;
+    }
+
+    .presentationimg {
+        display: none;
+    }
+
+    .imgMobile {
+        width: 100%;
+        height: 375px;
+        display: block;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .price {
+        font-size: 1.5em;
+    }
+
+    .priceReduction {
+        font-size: 0.4em;
+    }
+
+
 }
