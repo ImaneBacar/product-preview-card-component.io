@@ -15,7 +15,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 500px;
+    height: 400px;
     background: white;
     border-radius: 10px;
     width: 50%;
